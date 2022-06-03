@@ -4,17 +4,17 @@
     /*grid-template-columns: 1fr 1fr 2fr; */ /*we decide how many columns*/ /*use fr always, NOT px, % etc.*/
     /*grid-template-columns: repeat(3, 1fr);*/
     /*grid-template-columns: auto 1fr 2fr;*/ /*Auto will scale the grid*/
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*Makes it responsive*/
     grid-template-rows: 1fr;
 }
 
 .green{
     /*grid-column-start: 1;
     grid-column-end: 3;*/
-    /*grid-column: 1/-1; */
-    grid-column: span 2;
-    grid-row: 1/3;
-    justify-self: start; /* justify-self: start/end of column. align-self: start/end of row*/
+    /*grid-column: 1/-1; */ /**/
+    grid-column: span 1;
+    grid-row: 1/2;
+    /*justify-self: start; /* justify-self: start/end of column. align-self: start/end of row*/
 }
 
 .zone {
